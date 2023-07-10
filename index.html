@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <title>Document</title>
+    <script src="./index.js"></script>
+    <title>Quiz App</title>
 </head>
 <body>
     <h1>eCommerce Quiz</h1>
-    <div class="container active-question">
+    <div class="question-container active-question" id="question1">
         <h2>Question 1 of 3:</h2>
         <p class="question">Which of the following is not a real eCommerce platform?</p>
         <div class="answers">
@@ -30,39 +31,55 @@
                 <label for="bigCommerce">BigCommerce</label>
             </div>
         </div>
-        <button class="btn">Next <span>›</span></button>  
+        <button class="btn" onclick="next()">Next <span>›</span></button>  
     </div>
-    <div class="container">
+    <div class="question-container" id="question2">
         <h2>Question 2 of 3:</h2>
         <p class="question">If Shopify is so good, why are Shopify developers necessary?</p>
         <div class="answers">
-            <input type="radio" id="saveTime" value="saveTime" name="shopifyDevNecessary">
-            <label for="saveTime">To save time on things like store setups and migrations</label>
-            <input type="radio" id="extend" value="extend" name="shopifyDevNecessary">
-            <label for="extend">To extend the limited design options and functionalities of themes with custom code</label>
-            <input type="radio" id="support" value="support" name="shopifyDevNecessary">
-            <label for="support">To provide support with a deep understanding of how the platform works and what its limitations are</label>
-            <input type="radio" id="devNecAll" value="devNecAll" name="shopifyDevNecessary">
-            <label for="devNecAll">All the above</label>
+            <div class="answer">
+                <input type="radio" id="saveTime" value="saveTime" name="shopifyDevNecessary">
+                <label for="saveTime">To save time on things like store setups and migrations</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="extend" value="extend" name="shopifyDevNecessary">
+                <label for="extend">To extend the limited design options and functionalities of themes with custom code</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="support" value="support" name="shopifyDevNecessary">
+                <label for="support">To provide support with a deep understanding of how the platform works and what its limitations are</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="devNecAll" value="devNecAll" name="shopifyDevNecessary">
+                <label for="devNecAll">All the above</label>
+            </div>
         </div>
-        <button class="btn"><span>‹</span> Back</button>
-        <button class="btn">Next <span>›</span></button>  
+        <button class="btn" onclick="prev()"><span>‹</span> Back</button>
+        <button class="btn" onclick="next()">Next <span>›</span></button>  
     </div>
-    <div class="container">
+    <div class="question-container" id="question3">
         <h2>Question 3 of 3:</h2>
         <p class="question">Which of the following is true about Shopify developers?</p>
         <div class="answers">
-            <input type="radio" id="paid" value="paid" name="shopifyDevs">
-            <label for="paid">They are paid extremely well</label>
-            <input type="radio" id="demand" value="demand" name="shopifyDevs">
-            <label for="demand">There is a high demand for them</label>
-            <input type="radio" id="liquid" value="liquid" name="shopifyDevs">
-            <label for="liquid">They need to know web development, the platform itself, and the liquid template language</label>
-            <input type="radio" id="shopifyDevsAll" value="shopifyDevsAll" name="shopifyDevs">
-            <label for="shopifyDevsAll">All the above</label>
+            <div class="answer">
+                <input type="radio" id="paid" value="paid" name="shopifyDevs">
+                <label for="paid">They are paid extremely well</label>
+            </div>
+            <div class="answer">
+                <input type="radio" id="demand" value="demand" name="shopifyDevs">
+                <label for="demand">There is a high demand for them</label>
+            </div>
+            <div class="answer">    
+                <input type="radio" id="liquid" value="liquid" name="shopifyDevs">
+                <label for="liquid">They need to know web development, the platform itself, and the liquid template language</label>
+            </div>
+            <div class="answer">   
+                <input type="radio" id="shopifyDevsAll" value="shopifyDevsAll" name="shopifyDevs">
+                <label for="shopifyDevsAll">All the above</label>
+            </div>
         </div>
-        <button class="btn"><span>‹</span> Back</button>
-        <button class="btn">Next <span>›</span></button>
+        <button class="btn" onclick="prev()"><span>‹</span> Back</button>
+        <button class="btn" onclick="submit()">Submit <span>›</span></button>  
     </div>
 </body>
 </html>

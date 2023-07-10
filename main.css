@@ -9,7 +9,7 @@ h1 {
     font-size: 3rem;
 }
 
-h1, .container {
+h1, .question-container {
     margin-left: 25px;
 }
 
@@ -17,7 +17,7 @@ h2 {
     font-size: 2rem;
 }
 
-.container {
+.question-container {
     display: none;
 }
 
@@ -43,9 +43,7 @@ h2 {
     border-radius: 50%;
     cursor: pointer;
     height: 25px;
-    left: 5;
     position: absolute;
-    top: 5;
     width: 25px;
 }
 
@@ -66,6 +64,10 @@ input:checked {
     font-size: 1.5rem;
     padding: 10px 20px;
     margin-top: 20px;
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 .btn span {

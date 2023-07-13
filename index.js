@@ -81,8 +81,6 @@ function submit() {
         document.getElementById('question3').classList.remove('active-question');
         document.getElementsByTagName('h2')[0].style.display = "none";
         showScorePage();
-        console.log(JSON.stringify(answerList));
-        console.log(correctAnswers);
     } else {
         window.alert('please select an answer');
     }   

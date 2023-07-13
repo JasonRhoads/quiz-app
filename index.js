@@ -120,3 +120,16 @@ function getScoreMessage() {
     }
     return msg;
 }
+
+function retake() {
+    correctAnswers = 0;
+    currentQuestion = 1;
+    document.getElementById('result').style.display = "none";
+    document.getElementById(`question${currentQuestion}`).classList.add('active-question');
+    for (let i = 1; i <= qTotal; i++) {
+        let questions = document.querySelectorAll(`input[type='radio'][name='${answerList[i].question}']`)
+        for (let i = 0; i < questions.length; i++) {
+            questions[i].checked = false;
+        }
+    }    
+}

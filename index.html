@@ -5,13 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./main.css">
-    <script src="./index.js"></script>
     <title>Quiz App</title>
 </head>
 <body>
     <h1>eCommerce Quiz</h1>
+    <h2>Question <span id="qNum"></span> of <span id="qTotal"></span>:</h2>
     <div class="question-container active-question" id="question1">
-        <h2>Question 1 of 3:</h2>
         <p class="question">Which of the following is not a real eCommerce platform?</p>
         <div class="answers">
             <div class="answer">
@@ -34,7 +33,6 @@
         <button class="btn" onclick="next()">Next <span>›</span></button>  
     </div>
     <div class="question-container" id="question2">
-        <h2>Question 2 of 3:</h2>
         <p class="question">If Shopify is so good, why are Shopify developers necessary?</p>
         <div class="answers">
             <div class="answer">
@@ -58,7 +56,6 @@
         <button class="btn" onclick="next()">Next <span>›</span></button>  
     </div>
     <div class="question-container" id="question3">
-        <h2>Question 3 of 3:</h2>
         <p class="question">Which of the following is true about Shopify developers?</p>
         <div class="answers">
             <div class="answer">
@@ -81,5 +78,6 @@
         <button class="btn" onclick="prev()"><span>‹</span> Back</button>
         <button class="btn" onclick="submit()">Submit <span>›</span></button>  
     </div>
+    <script src="./index.js"></script>
 </body>
 </html>

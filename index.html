@@ -22,7 +22,7 @@
                 <label for="wooCommerce">WooCommerce</label>
             </div>
             <div class="answer">
-                <input type="radio" id="shopCommerce" value="ShopCommerce" name="eCommercePlatform">
+                <input type="radio" id="shopCommerce" value="shopCommerce" name="eCommercePlatform">
                 <label for="shopCommerce">ShopCommerce</label>
             </div>
             <div class="answer">
@@ -79,5 +79,10 @@
         <button class="btn" onclick="submit()">Submit <span>›</span></button>  
     </div>
     <script src="./index.js"></script>
+
+    <div class="result" id="result">
+        <h2>Your Score <span id="scorePercent"></span>%</h2>
+        <p class="answerMessage" id="answerMessage"></p>
+    </div>
 </body>
 </html>

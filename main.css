@@ -9,7 +9,7 @@ h1 {
     font-size: 3rem;
 }
 
-h1, .question-container {
+h1, h2, .question-container {
     margin-left: 25px;
 }
 
